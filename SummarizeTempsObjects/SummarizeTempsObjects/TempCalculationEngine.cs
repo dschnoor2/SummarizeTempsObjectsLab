@@ -42,8 +42,6 @@ namespace SummarizeTempsObjects
                 {
                     temperaturesAboveThreshold += 1;
                 }
-                    //if above threshold count
-                    //else do not count
             }
             
             return temperaturesAboveThreshold; // <-- Replace this with the number
@@ -53,16 +51,14 @@ namespace SummarizeTempsObjects
         {
             // add logic to calculate and return temps below the threshold
             int temperaturesBelowThreshold = 0;
-
-
+            
             foreach (int temperatures in _temperatures)
             {
                 //loop through all list of items
                 if (temperatures < threshold)
                 {
                     temperaturesBelowThreshold += 1;
-                }
-                
+                }               
             }
             
             return temperaturesBelowThreshold; // <-- Replace this with the number
